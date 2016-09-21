@@ -26,4 +26,4 @@ This is not the total amount of words in the paragraph, but how many times all o
 
 Issues:
 
-The code tried to update a word in the dictionary before the dictionary had an values in it.
+The code tried to update a word in the dictionary before the dictionary had any values in it.
