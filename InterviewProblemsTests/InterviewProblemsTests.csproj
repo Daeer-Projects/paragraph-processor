@@ -73,6 +73,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Problem1Tests.cs" />
+    <Compile Include="Problem2Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

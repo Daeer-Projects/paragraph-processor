@@ -17,14 +17,17 @@ namespace InterviewProblems
             Console.WriteLine(Problem1.Process(LoremIpsum, 70));
             Console.WriteLine();
 
-            // Uncomment these lines to test your second solution.
-            //Console.WriteLine("Problem 2:");
-            //foreach (var result in Problem2.Process(LoremIpsum))
-            //    Console.WriteLine("Word: " + result.Key + " Count: " + result.Value);
-            //Console.WriteLine();
+            //Uncomment these lines to test your second solution.
+            Console.WriteLine("Problem 2:");
+            foreach (var result in Problem2.Process(LoremIpsum))
+            {
+                Console.WriteLine("Word: " + result.Key + " Count: " + result.Value);
+            }
+
+            Console.WriteLine();
 
             Console.WriteLine("Press any key to continue.");
-            Console.Read();
+            Console.ReadKey();
         }
     }
 }
