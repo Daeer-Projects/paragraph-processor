@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace NxteraInterviewProblems
+namespace InterviewProblems
 {
     /// <summary>
     /// The function should take a string, and return a dictionary that returns a count of the number of occurrences of

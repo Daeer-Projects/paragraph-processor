@@ -1,8 +1,8 @@
 ﻿using FluentAssertions;
-using NxteraInterviewProblems;
+using InterviewProblems;
 using Xunit;
 
-namespace NxteraInterviewProblemsTests
+namespace InterviewProblemsTests
 {
     public class Problem1Tests
     {

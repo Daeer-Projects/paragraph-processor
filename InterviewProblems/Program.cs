@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NxteraInterviewProblems
+namespace InterviewProblems
 {
     class Program
     {

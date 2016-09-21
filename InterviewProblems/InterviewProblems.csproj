@@ -7,8 +7,8 @@
     <ProjectGuid>{0C28AF21-FB0B-44D2-A107-BCD6B9F8FD87}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NxteraInterviewProblems</RootNamespace>
-    <AssemblyName>NxteraInterviewProblems</AssemblyName>
+    <RootNamespace>InterviewProblems</RootNamespace>
+    <AssemblyName>InterviewProblems</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

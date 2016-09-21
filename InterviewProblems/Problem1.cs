@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace NxteraInterviewProblems
+namespace InterviewProblems
 {
     /// <summary>
     /// The function should take a string and a desired line length. It should return a new string with newline

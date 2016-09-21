@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NxteraInterviewProblems", "NxteraInterviewProblems\NxteraInterviewProblems.csproj", "{0C28AF21-FB0B-44D2-A107-BCD6B9F8FD87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewProblems", "InterviewProblems\InterviewProblems.csproj", "{0C28AF21-FB0B-44D2-A107-BCD6B9F8FD87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NxteraInterviewProblemsTests", "NxteraInterviewProblemsTests\NxteraInterviewProblemsTests.csproj", "{F1B83CCA-9869-43DB-BC80-B051A4BA145B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewProblemsTests", "InterviewProblemsTests\InterviewProblemsTests.csproj", "{F1B83CCA-9869-43DB-BC80-B051A4BA145B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
