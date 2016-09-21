@@ -6,6 +6,9 @@ namespace InterviewProblemsTests
 {
     public class Problem1Tests
     {
+        /// <summary>
+        /// A passing test using the current version.
+        /// </summary>
         [Fact]
         public void given_short_phrase_and_large_value_when_processed_returns_full_phrase()
         {
@@ -19,6 +22,9 @@ namespace InterviewProblemsTests
             result.Should().Be(expected);
         }
 
+        /// <summary>
+        /// A passing test using the current version.
+        /// </summary>
         [Fact]
         public void given_long_phrase_and_high_value_when_processed_returns_correctly_split_phrase()
         {
@@ -48,6 +54,9 @@ Officiis neglegentur ut ius, aliquip invenire reformidans ex sit. Te legere disp
             result.Should().Be(expected);
         }
 
+        /// <summary>
+        /// A passing test using the current version.
+        /// </summary>
         [Fact]
         public void given_short_phrase_and_small_value_when_processed_returns_correct_phrase()
         {
@@ -62,6 +71,29 @@ gubergren has.
 
             // Act.
             var result = Problem1.Process(phrase, 20);
+
+            // Assert.
+            result.Should().Be(expected);
+        }
+
+        /// <summary>
+        /// A failing test.
+        /// This test shows where the error is in the current version.
+        /// </summary>
+        [Fact]
+        public void given_short_phrase_and_small_value_with_length_matching_newline_when_processed_returns_correct_phrase()
+        {
+            // Arrange.
+            const string expected = @"Hello world!
+Oh dear!
+What has
+gone wrong?
+";
+            const string phrase = @"Hello world!
+Oh dear! What has gone wrong?";
+
+            // Act.
+            var result = Problem1.Process(phrase, 13);
 
             // Assert.
             result.Should().Be(expected);
