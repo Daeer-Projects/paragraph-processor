@@ -33,6 +33,8 @@ namespace InterviewProblems
     /// 7. This method also uses two loops.  One to add or update from the string array, the other to get the values
     /// into another dictionary, in a specified order.  You might be able to order the concurrent dictionary in the
     /// return method.
+    /// 
+    /// 8. Changed the current method to not add an empty string to the dictionary.
     /// </summary>
     public static class Problem2
     {

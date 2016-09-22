@@ -92,6 +92,7 @@ namespace InterviewProblemsTests
 
         /// <summary>
         /// A simple test to ensure we get the expected dictionary depending on the case of the word.
+        /// We are ensuring that the case is considered a different word.
         /// </summary>
         [Fact]
         public void given_phrase_with_same_word_but_with_different_case_returns_correct_dictionary()
@@ -110,5 +111,6 @@ namespace InterviewProblemsTests
             // Assert.
             result.ShouldBeEquivalentTo(expectedDictionary);
         }
+
     }
 }
