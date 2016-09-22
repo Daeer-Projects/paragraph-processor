@@ -36,5 +36,79 @@ namespace InterviewProblemsTests
             // Assert.
             result.ShouldBeEquivalentTo(expectedDictionary);
         }
+
+        /// <summary>
+        /// A passing test, made possible with a small change to the method.  We don't want to have an
+        /// entry for an empty string.
+        /// </summary>
+        [Fact]
+        public void given_phrase_with_punctuation_when_processed_returns_empty_dictionary()
+        {
+            // Arrange.
+            const string phrase = "\"'.,!?";
+
+            // Act.
+            var result = Problem2.Process(phrase);
+
+            // Assert.
+            result.Count.Should().Be(0);
+        }
+
+        /// <summary>
+        /// A simple test to ensure we get the correct count of the same word.
+        /// </summary>
+        [Fact]
+        public void given_phrase_with_same_word_returns_one_entry()
+        {
+            // Arrange.
+            const string phrase = "hello hello hello hello";
+
+            // Act.
+            var result = Problem2.Process(phrase);
+
+            // Assert.
+            result.Count.Should().Be(1);
+        }
+
+        /// <summary>
+        /// A simple test to ensure we get the expected dictionary.
+        /// </summary>
+        [Fact]
+        public void given_phrase_with_same_word_returns_correct_dictionary()
+        {
+            // Arrange.
+            const string phrase = "hello hello hello hello";
+            var expectedDictionary = new Dictionary<string, int>
+            {
+                {"hello", 4}
+            };
+
+            // Act.
+            var result = Problem2.Process(phrase);
+
+            // Assert.
+            result.ShouldBeEquivalentTo(expectedDictionary);
+        }
+
+        /// <summary>
+        /// A simple test to ensure we get the expected dictionary depending on the case of the word.
+        /// </summary>
+        [Fact]
+        public void given_phrase_with_same_word_but_with_different_case_returns_correct_dictionary()
+        {
+            // Arrange.
+            const string phrase = "hello Hello hello hello";
+            var expectedDictionary = new Dictionary<string, int>
+            {
+                {"hello", 3},
+                {"Hello", 1}
+            };
+
+            // Act.
+            var result = Problem2.Process(phrase);
+
+            // Assert.
+            result.ShouldBeEquivalentTo(expectedDictionary);
+        }
     }
 }

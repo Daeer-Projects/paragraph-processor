@@ -67,7 +67,10 @@ namespace InterviewProblems
 
             foreach (var pair in wordCount.OrderByDescending((s) => s.Key))
             {
-                dictionary.Add(pair.Key, pair.Value);
+                if (!string.IsNullOrEmpty(pair.Key))
+                {
+                    dictionary.Add(pair.Key, pair.Value);
+                }
             }
 
             return dictionary;
